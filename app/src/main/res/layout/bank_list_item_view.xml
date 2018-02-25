@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/bank_list_item_view"
+    >
+
+   <RelativeLayout
+       xmlns:ProgressWheel="http://schemas.android.com/apk/res/com.example.bmflo.piggybank"
+       android:id="@+id/prog_bar_and__name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/goalPercent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           android:text="0%"
+           />
+
+
+       <ProgressBar
+           android:id="@+id/bank_progress_bar"
+           style="?android:attr/progressBarStyleHorizontal"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:max="100"
+           android:progress="0"
+           android:clickable="false"
+           android:indeterminate="false"
+           android:progressDrawable="@drawable/progress_bar"
+           />
+   </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bank_name_in_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuition"
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <ImageButton
+        android:id="@+id/update_bank_prog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="12dp"
+        android:onClick="editBank"
+        />
+
+
+
+
+
+</LinearLayout>

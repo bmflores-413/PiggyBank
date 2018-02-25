@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Piggy Bank</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="piggy_bank_colors">
+        <item>green</item>
+        <item>pink</item>
+        <item>blue</item>
+        <item>purple</item>
+        <item>red</item>
+        <item>aqua</item>
+        <item>yellow</item>
+    </string-array>
+
+    <string-array name="time_intervals">
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+        <item>Years</item>
+    </string-array>
+
+    <string-array name="time_intervals_income">
+        <item>Hourly</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Bi-weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_income_title"
+        android:text="Add New Income"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/income_source_prompt"
+        android:text="Income Source: "
+        android:layout_below="@id/new_income_title"
+        android:layout_alignLeft="@+id/new_income_title"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/income_source"
+        android:inputType="text"
+        android:layout_alignBaseline="@id/income_source_prompt"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/income_source_prompt"
+        android:ems="10"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/income_amount_prompt"
+        android:layout_below="@+id/income_source_prompt"
+        android:layout_alignLeft="@id/income_source_prompt"
+        android:layout_marginTop="30dp"
+        android:text="Amount:           $ "
+        android:textStyle="bold"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/income_amount"
+        android:inputType="number"
+        android:layout_alignBaseline="@id/income_amount_prompt"
+        android:ems="4"
+        android:layout_toLeftOf="@id/income_frequency"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/income_frequency"
+        android:layout_alignBaseline="@id/income_amount_prompt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:entries="@array/time_intervals_income"
+        ></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/auto_prompt"
+        android:layout_below="@id/income_amount"
+        android:layout_alignLeft="@id/income_amount_prompt"
+        android:layout_marginTop="30dp"
+        android:text="Automatic Updating?"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        />
+
+    <Switch
+        android:id="@+id/auto_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/auto_prompt"
+        android:layout_marginRight="12dp"
+        android:showText="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saving_limit"
+        android:layout_below="@id/auto_prompt"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@id/auto_prompt"
+        android:text="Saving limit?"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:id="@+id/limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/saving_limit"
+        android:ems="2"
+        android:inputType="number"
+        android:layout_toLeftOf="@+id/percent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percent"
+        android:text="%"
+        android:textSize="18dp"
+        android:layout_alignBaseline="@id/saving_limit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/limit_exp"
+        android:layout_below="@id/saving_limit"
+        android:layout_alignLeft="@id/saving_limit"
+        android:text="Optional: Limit percent of income that can go towards savings"
+        android:textSize="10dp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_income"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/income_source"
+        android:text="Coffee Shop Job"
+        android:textSize="18dp"
+        android:layout_marginTop = "20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Switch
+        android:id="@+id/auto_on_off_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/income_source"
+        android:layout_alignParentRight="true"
+        android:showText="true"
+        android:checked="true"
+        android:layout_marginRight="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate_text"
+        android:text="Income: "
+        android:layout_below="@+id/income_source"
+        android:layout_alignLeft="@+id/income_source"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate_amount"
+        android:text="$1200"
+        android:layout_below="@+id/income_source"
+        android:layout_toRightOf="@+id/rate_text"
+        android:layout_alignBaseline="@+id/rate_text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate_frequency"
+        android:text="monthly"
+        android:layout_alignBaseline="@+id/rate_text"
+        android:layout_toRightOf="@+id/rate_amount"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percent_saved"
+        android:text="12%"
+        android:textStyle="bold"
+        android:layout_below="@+id/rate_text"
+        android:layout_alignLeft="@+id/rate_text"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total towards savings for"
+        android:id="@+id/towards_savings_total_text"
+        android:layout_alignBaseline="@+id/percent_saved"
+        android:layout_toRightOf="@+id/percent_saved"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/items"
+        android:layout_below="@+id/percent_saved"
+        android:layout_alignLeft="@+id/towards_savings_total_text"
+        android:text="- Car
+- Camera"/>
+
+
+</RelativeLayout>
